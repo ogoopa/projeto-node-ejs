@@ -6,3 +6,13 @@
 - dentro do package.json estará o name: do projeto;
 - criar um arquivo index.html;
   - neste caso, iremos criar primeiro um HTML e depois passar para o EJS;
+
+- no terminal, inserir o comando npm install ejs
+  - mudar o arquivo para index.ejs
+
+- inserir o comando npm install express
+
+- após esses passos, serão criados os arquivos node_modules e package-lock.json;
+
+- para conseguir rodar o index.ejs:
+  - criar um arquivo server.js
