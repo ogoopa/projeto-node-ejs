@@ -8,7 +8,39 @@ app.set("view engine", "ejs");
 
 // após, devemos criar uma rota;
 app.get('/', function (req, res) {
-  res.render("pages/index");
+  const items = [
+    {
+      title: "D",
+      message: "Desenvolver aplicações de forma fácil"
+    },
+    {
+      title: "E",
+      message: "EJS usa JavaScript para renderizar HTML"
+    },
+    {
+      title: "M",
+      message: "Muito fácil de usar"
+    },
+    {
+      title: "A",
+      message: "Altamente escalável"
+    },
+    {
+      title: "I",
+      message: "Install EJS"
+    },
+    {
+      title: "S",
+      message: "Sintaxe simples"
+    }
+  ];
+
+  const subtitle = "Uma linguagem de modelagem para criação de páginas HTML utilizando Javascript"
+
+  res.render("pages/index", {
+    qualities: items,
+    subtitle: subtitle,
+  });
 })
 
 // segundo exemplo de rota, '/sobre';

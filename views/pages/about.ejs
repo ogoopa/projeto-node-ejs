@@ -1,9 +1,12 @@
+<!-- observar a include do ejs -->
+<!-- observar os objetos {} no ejs, na linha das incudes (pagina header) -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <%- include('../partials/head'); %>
 
   <body class="container">
-    <%- include('../partials/header'); %>
+    <%- include('../partials/header', {pagina: 'sobre'}); %>
 
     <main>
       <div class="jumbotron">
